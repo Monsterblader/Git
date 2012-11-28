@@ -1,11 +1,30 @@
 <html>
 <head>
 	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<img src="http://sphotos-b.xx.fbcdn.net/hphotos-ash4/1930_1078343154829_6247_n.jpg"></img>
+
+	<div id="types">Unknown</div>
+	<div id="types">Null</div>
+	<div id="types">""</div>
+	<div id="types">NaN</div>
+	<br />
+<img id="compostTag" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRulf9AEpMgiDFZfJZEf1FM8jP6_Ny8cCpzinHuLczaBbM2mB3D" height=100px></img>
+<br />
+<img id="garbageCan" src="http://cloudfront.zorotools.com/product/full/2PYW6_AS01.JPG" height=200px></img>
+<img id="emptyCan" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpg-gGaJJqibizEzBqKWo0hOPxLhrvKRVk16MZR-y6dVC6jcJw" height = 200px></img>
+<img id="fullCan" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHYBWZ-aJn-uaQb90tkWb-ZvR-GuEqsGljTqXvqTMYnO6I7asIVA" height=200px></img>
+<br />
 <button onclick="sayHello()">Click Me</button>
 <div id="result"></div>
+	<form name="myCheckListForm">
+		<input type="text" name="checklistItem">
+		<input type="button" value="Add to List" onclick="processForm()">
+	</form>
+
+	<div id="checkList"></div>
+
 </body>
 </html> 
