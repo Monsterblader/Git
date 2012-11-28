@@ -5,6 +5,42 @@
 	text-align: center;
 }
 
+#compostTag {
+	position: float;
+	margin-left: 200px;
+	margin-top: 200px;
+	position: fixed;
+	visibility: hidden;
+}
+
+#garbageCan {
+	position: float;
+	margin-left: 0px;
+	margin-top: 350px;
+	position: fixed;
+	visibility: hidden;
+}
+
+#emptyCan {
+	position: float;
+	margin-left: 0px;
+	margin-top: 350px;
+	position: fixed;
+	visibility: hidden;
+}
+
+#fullCan {
+	position: float;
+	margin-left: 0px;
+	margin-top: 350px;
+	position: fixed;
+	visibility: hidden;
+}
+
+#result {
+	visibility: hidden;
+}
+
 body {
 	background-color: cyan;
 }
