@@ -1,0 +1,10 @@
+.checked-off { text-decoration: line-through }
+#types {
+	float: left;
+	margin-left: 100px;
+	text-align: center;
+}
+
+body {
+	background-color: cyan;
+}
