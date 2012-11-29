@@ -7,28 +7,27 @@
 <body>
 	<div id="container">
 
-		<div class="types">Unknown</div>
-		<div class="types">Null</div>
-		<div class="types">""</div>
-		<div class="types">NaN</div>
-
-		<div class="image">
-		</div>
-		<div class="image">
-			<img id="garbageCan" src="http://cloudfront.zorotools.com/product/full/2PYW6_AS01.JPG">
-		</div>
-		<div class="image">
-			<img id="compostTag" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRulf9AEpMgiDFZfJZEf1FM8jP6_Ny8cCpzinHuLczaBbM2mB3D">
-
-			<img id="emptyCan" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpg-gGaJJqibizEzBqKWo0hOPxLhrvKRVk16MZR-y6dVC6jcJw">
-		</div>
-		<div class="image">
-			<img id="fullCan" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHYBWZ-aJn-uaQb90tkWb-ZvR-GuEqsGljTqXvqTMYnO6I7asIVA">
-		</div>
-
-		
 		<div class='button'>
-			<button onclick="showCans()">1</button>
+			<button onclick="test()">GO</button>
+		</div>
+		<div id="header">Values</div>
+		<br></br>
+		<div id="examples">
+			<div class="types">3</div>
+			<div class="types">"a"</div>
+			<div class="types">"family"</div>
+		</div>
+		<div id="unk">
+			<a class="aleft">undefined</a>
+			<a class="aright">unexpected and unknown</a>
+		</div>
+		<div id="nl">
+			<a class="aleft">null</a>
+			<a class="aright">expected and unknown</a>
+		</div>
+		<div id="notNum">
+			<a class="aleft">NaN</a>
+			<a class="aright">numeric expression that cannot be resolved</a>
 		</div>
 	</div>
 </body>
