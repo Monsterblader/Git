@@ -1,4 +1,11 @@
-.checked-off { text-decoration: line-through }
+#container {
+	width: 960px;
+	margin:auto;
+}
+
+.button {
+	clear: both;
+}
 
 #header {
 	text-align: center;
@@ -10,23 +17,23 @@
 
 #examples {
 	visibility: hidden;
+	margin-bottom: 100px;
 }
 
-#unk {
-	visibility: hidden;
-	width: 960;
-	font-size: 48px;
-	margin-top: 100px;
+.types {
+	float: left;
+	text-align: center;
+	font-size: 42px;
+	font-weight: bold;
+	width: 240px;
 }
 
-#nl {
-	visibility: hidden;
-	width: 960;
-	font-size: 48px;
+#exampleTrue {
+	font-family: 'Lucida Grande', sans-serif;
+	color: blue;
 }
 
-#notNum {
-	visibility: hidden;
+.descriptionBlock {
 	width: 960;
 	font-size: 48px;
 }
@@ -36,55 +43,44 @@
 	color: blue;
 }
 
-.aright{
+.aright {
 	float: right;
 	width: 640;
 	text-align: right;
 }
 
-.types {
-	float: left;
-	text-align: center;
-	font-size: 42px;
-	font-weight: bold;
-	width: 320px;
-}
-
-.image {
-	float: left;
-	width: 240px;
-	margin-top: 20px;
+#unk {
 	visibility: hidden;
 }
-.image img {
-	width: 240px;
+
+#nl {
+	visibility: hidden;
 }
 
-#compostTag {
-	position: float;
+#notNum {
+	visibility: hidden;
 }
 
-#garbageCan {
-	position: float;
-
+#consoleExamples {
+	border: black 10px;
 }
 
-#emptyCan {
-	position: float;
+.exampleBlock {
+	width: 960;
+	font-size: 36px;
 }
 
-#fullCan {
-	position: float;
+#unkExample {
+	visibility: hidden;
+}
+
+#nlExample {
+	visibility: hidden;
+}
+
+#NaNExample {
+	visibility: hidden;
 }
 
 body {
-}
-
-#container{
-	width: 960px;
-	margin:auto;
-}
-
-.button {
-	clear: both;
 }

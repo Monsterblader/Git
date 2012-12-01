@@ -1,70 +1,60 @@
-
-var i=0;
-function processForm() {
-
-	i++;
-	var listItem = document.myCheckListForm.checklistItem.value;
-	var listed = '<div id="item' + i + '"><input type="checkbox" onclick="crossedOut(\'item' + i + '\')" />' + listItem + '</div>';
-
-	document.getElementById("checkList").innerHTML += listed;
-}
-
-function crossedOut(item) {
-	document.getElementById(item).className = "checked-off";
-}
-
-function sayHello() {
-/*	if (document.getElementById("result").style.visibility == "hidden") {
-		document.getElementById("result").style.visibility = "visible";
-	} else {
-		document.getElementById("result").style.visibility = "hidden";
-}*/
-var test = sqrt(-1);
-document.getElementById("result").text(test);
-}
-
-var testCounter = 0;
+var testCounter = 1;
 function test() {
-	if (testCounter === 0) {
-		stage1();
-	} else if (testCounter === 1) {
-		stage2();
-	} else if (testCounter === 2) {
-		stage3();
-	} else if (testCounter === 3) {
-		stage4();
+	switch (testCounter++) {
+		case 1:
+			turnOn("examples");
+			break;
+		case 2:
+			turnOn("unk");
+			break;
+		case 3:
+			turnOn("nl");
+			break;
+		case 4:
+			turnOn("notNum");
+			break;
+		case 5:
+			turnOn("unkExample");
+			break;
+		case 6:
+			stage5();
+			break;
+		case 7:
+			turnOn("nlExample");
+			break;
+		case 8:
+			stage6();
+			break;
+		case 9:
+			turnOn("NaNExample");
+			break;
+		case 10:
+			stage7();
+			break;
+		default:
+			resetPage();
+			break;
 	}
-	testCounter++;
 }
 
-function stage1() {
-	if (document.getElementById("examples").style.visibility = "hidden") {
-		document.getElementById("examples").style.visibility = "visible";
-	} else {
-		document.getElementById("examples").style.visibility = "hidden";
-	}
+function turnOn(onText) {
+	document.getElementById(onText).style.visibility = "visible";
 }
 
-function stage2() {
-	if (document.getElementById("unk").style.visibility = "hidden") {
-		document.getElementById("unk").style.visibility = "visible";
-	} else {
-		document.getElementById("unk").style.visibility = "hidden";
-	}
+function stage5() {
+	var testObject = {};
+	console.log(testObject.moo);
 }
 
-function stage3() {
-	if (document.getElementById("nl").style.visibility = "hidden") {
-		document.getElementById("nl").style.visibility = "visible";
-	} else {
-		document.getElementById("nl").style.visibility = "hidden";
-	}
+function stage6() {
+	console.log(document.getElementById('asdfasdfasdf'));
 }
 
-function stage4() {
-	if (document.getElementById("notNum").style.visibility = "hidden") {
-		document.getElementById("notNum").style.visibility = "visible";
-	} else {
-		document.getElementById("notNum").style.visibility = "hidden";
-	}
+function stage7() {
+	console.log(Math.sqrt(-1));
+}
+
+function resetPage() {
+	document.location.reload(true);
+	testCounter = 1;
 }
